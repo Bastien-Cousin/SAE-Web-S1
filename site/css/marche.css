@@ -1,0 +1,182 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+  
+@font-face {  /* On a importé la police chivo pour notre site */
+    font-family: "chivo";
+    src: url("../font/Chivo-Black.ttf") format("truetype");
+    font-weight: none;
+    font-style: normal;
+}
+  
+body {
+    font-family: "chivo";
+}
+  
+.logo_site {                /* paramètres du logo du site */
+    height: 75px; /*Hauteur du logo */
+    padding-top: 7.5px; /* Marge intérieur supérieur du logo */
+    float: left;
+    width: auto;
+}
+  
+.langue {
+    float: right;
+    width: 45px;
+    margin-right: 50px;
+    transform: translate(0, -30px); /* Sert à déplacer l'élément de x et y pixels sur l'écran */
+    border: solid 5px transparent;
+    border-radius: 5px;
+}
+
+.langue:hover { /* Quand on passe au dessus de d'objet qui est dans la classe langue  */
+    transition: border 0.3s ease;
+    border: solid 5px #FFFFFF;
+}
+  
+nav {
+    position: fixed; /* Position fixé du menu pour qu'il bouge avec le curseur quand on se déplace dans le site */
+    top: 0;
+    left: 0;
+    text-align: center;
+    background-color: #0F8389;
+    height: 92.5px;
+    width: 100%;
+    font-size: 125%;
+    z-index: 10;
+}
+
+nav li {
+    display: inline-block;
+    padding-top: 35px;
+    padding-right: 70px;
+}
+
+a {
+    transition: color 0.3s ease;
+    text-decoration: none;
+    color: black;
+}
+  
+.on_marche {
+    transition: color 0.3s ease;
+    color: #FFFFFF;
+}
+
+.on_marche:hover {
+    transition: color 0.3s ease;
+    color: #a1a1a1;
+}
+  
+a:hover {
+    transition: color 0.3s ease;
+    color: #FFFFFF;
+}
+
+article {
+    margin: auto;
+    width: 1000px;
+    margin-top: 185px;
+}
+
+p {
+    text-align: center;
+    width: 500px;
+}
+
+.compartiment:nth-child(1) p { /* Sert à appliquer les règles de style uniquement aux balises p de la 1ère balise qui a la classe compartiment */
+    transform: translate(400px, -200px); /* Sert à déplacer l'élément de x et y pixels sur l'écran */
+}
+
+.compartiment:nth-child(2) p { /* Sert à appliquer les règles de style uniquement aux balises p de la 1ère balise qui a la classe compartiment */
+    transform: translate(400px, -250px); /* Sert à déplacer l'élément de x et y pixels sur l'écran */
+}
+
+.compartiment:nth-child(3) p { /* Sert à appliquer les règles de style uniquement aux balises p de la 1ère balise qui a la classe compartiment */
+    transform: translate(400px, -150px); /* Sert à déplacer l'élément de x et y pixels sur l'écran */
+}
+
+.compartiment:nth-child(4) p { /* Sert à appliquer les règles de style uniquement aux balises p de la 1ère balise qui a la classe compartiment */
+    width: auto;
+}
+  
+h1 { 
+    text-align : center;
+    margin: 30px;
+    transform: translate(0, 10px);
+}
+
+article img {
+    width: 40%;
+    border: solid 3px #000000;
+    border-radius: 8px;
+}
+
+.compartiment {
+    display: block;
+    margin-left: 50px;
+}
+
+
+footer {
+    background-color: #0F8389;
+    text-align: center;
+    padding: 15px;
+
+}
+
+footer a:hover {
+    transition: color 0.3s ease;
+    color: #FFFFFF;
+}
+
+@media only screen /* Media queries pour mettre le site sous forme de téléphone */
+and (min-device-width: 320px)
+and (max-device-width: 425px)
+and (max-device-height : 815px)
+and (orientation : portrait) { 
+body {
+    max-width: 500px;
+
+
+}
+
+h1{
+    font-size: 50px;
+    margin: -10px;
+}
+
+p{
+    font-size:30px;
+    text-align: center;
+    margin : 50px;
+}
+
+article img {
+    
+    text-align: center;
+    border: solid 3px #000000;
+    border-radius: 8px;
+    margin-left :10px;
+    
+}
+.compartiment:nth-child(1) p { /* Sert à appliquer les règles de style uniquement aux balises p de la 1ère balise qui a la classe compartiment */
+    transform: translate(0px, 0px);  /* Sert à déplacer l'élément de x et y pixels sur l'écran */
+}
+
+.compartiment:nth-child(2) p {  /* Sert à appliquer les règles de style uniquement aux balises p de la 1ère balise qui a la classe compartiment */
+    transform: translate(0px, 0px); /* Sert à déplacer l'élément de x et y pixels sur l'écran */
+}
+
+.compartiment:nth-child(3) p {  /* Sert à appliquer les règles de style uniquement aux balises p de la 1ère balise qui a la classe compartiment */
+    transform: translate(0px, -0px); /* Sert à déplacer l'élément de x et y pixels sur l'écran */
+}
+
+
+.Image{ /* Une class .Image pour les images */
+    width:80%;
+    margin : 50px; 
+    text-align: center;
+}
+}
