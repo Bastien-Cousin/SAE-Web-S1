@@ -1,5 +1,5 @@
 # SAE-Web-S1
-Projet de la SAE (Situation d'Apprentissage et d'Evaluation) Web du 1er semestre de la 1ère année (janvier 2025)
+Projet de la SAE (Situation d'Apprentissage et d'Evaluation) Web du 1er semestre de ma 1ère année (janvier 2025)
 ## Objectif
 Développer un site web statique et rendre tous les livrables en lien avec le site (logo, maquette, charte graphique, etc), par équipe de 4 et en 5 jours.
 ### Thème du site
